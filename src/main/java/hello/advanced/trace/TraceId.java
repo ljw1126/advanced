@@ -29,6 +29,10 @@ public class TraceId {
         return new TraceId(id, level - 1);
     }
 
+    public boolean isFirstLevel() {
+        return level == 0;
+    }
+
     public String getId() {
         return id;
     }
